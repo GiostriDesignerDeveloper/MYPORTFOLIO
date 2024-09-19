@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Journey in UI/UX & Frontend Development</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap">
+</head>
+
+<body>
+  <header class="header-secundario">
+    <nav>
+      <div class="search-container">
+        <form action="url_para_onde_os_dados_serao_enviados" method="post">
+          <label for="search" class="visually-hidden">Pesquisar:</label>
+          <input type="text" id="search" name="search" placeholder="Digite sua busca">
+          <button type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  <header>
+    <h1>A Journey in UI/UX & Frontend Development</h1>
+    <nav>
+      <div class="menu-container" id="menu-container">
+        <span class="material-symbols-outlined">menu</span>
+        <span class="menu-text">Menu</span>
+      </div>
+    </nav>
+    <nav class="sidebar" id="sidebar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="content-padding">
+    <!-- Seção sobre mim -->
+    <article>
+      <div class="align-container">
+        <div class="img-me">
+          <img src="img_body/IMG_0611 - Copia.JPG" alt="Foto de Letícia, UX/UI designer, sorrindo com fundo neutro">
+        </div>
+        <div class="text-content">
+          <h3>Olá, eu sou a Letícia</h3>
+          <p class="descricao-meta">
+            A Journey in UI/UX & Frontend Development é uma aventura. Em minha jornada, exploro novos territórios, descubro paisagens digitais e construo mundos virtuais. Em UX/UI design e product design, sou movida pela curiosidade e pela busca contínua em entender como as pessoas interagem com produtos digitais. Graduada em Design de Ambientes pela Universidade Estadual de Minas Gerais, desde novembro de 2021 estou intensamente dedicada a cursos de UX/UI,primorando minhas habilidades e conhecimentos nessa área que tanto me encanta.
+          <p class="descricao-meta">
+            Com um ano e seis meses de experiência prática, desenvolvi interfaces para uma plataforma de previdência complementar fechada voltada principalmente para idosos. Meu trabalho abrangeu:</p>
+          </p>
+          <ul class="descricao-meta">
+            <li>Pesquisa e análise de dados: Utilizei insights para fundamentar decisões de design.</li>
+            <li>Criação e manutenção de um Design System: Assegurando consistência e eficiência nos projetos.</li>
+            <li>Desenvolvimento de interfaces e componentes do style guide: Garantindo uma experiência coesa e intuitiva.</li>
+            <li>Condução de design reviews: Mantendo a qualidade dos projetos da equipe.</li>
+          </ul>
+          <p class="descricao-meta">
+            Minhas competências incluem a compreensão e implementação de regras de negócio complexas, análise de negócios e criação de interfaces intuitivas e acessíveis. Estou dedicada a criar experiências digitais que são não apenas funcionais, mas também visualmente atraentes, proporcionando uma usabilidade excepcional para todos os usuários.
+          </p>
+    </article>
+
+    </article>
+    <!-- Seção de cartões -->
+    <section class="card-container">
+      <div class="card">
+        <img src="img_body/Ativo com empréstimo sem requerimento 1- 1280x720.png" alt="Image Card" class="card-image">
+        <div class="card-content">
+          <h3>Card Title</h3>
+          <p>Card description goes here. It can be a short summary or some key points about the card.</p>
+        </div>
+        <button class="card-button">Saiba mais</button>
+      </div>
+      <div class="card">
+        <img src="img_body/Ativo com empréstimo sem requerimento 1- 1280x720.png" alt="Image Card" class="card-image">
+        <div class="card-content">
+          <h3>Card Title</h3>
+          <p>Card description goes here. It can be a short summary or some key points about the card.</p>
+        </div>
+        <button class="card-button">Saiba mais</button>
+      </div>
+      <div class="card">
+        <img src="img_body/Ativo com empréstimo sem requerimento 1- 1280x720.png" alt="Image Card" class="card-image">
+        <div class="card-content">
+          <h3>Card Title</h3>
+          <p>Card description goes here. It can be a short summary or some key points about the card.</p>
+        </div>
+        <button class="card-button">Saiba mais</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2024 Todos os direitos reservados.</p>
+    <p>Conteúdo protegido pelas leis de direitos autorais.</p>
+    <p>Entre em contato com <a href="mailto:legiostridesign@gmail.com">legiostridesign@gmail.com</a></p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelector('#menu-container').addEventListener('click', function () {
+        document.querySelector('#sidebar').classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+
+</html>
