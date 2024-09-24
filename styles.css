@@ -13,7 +13,7 @@ html {
 }
 .header-secundario {
   background-color: #dadde0;
-  padding: 7, 5%;
+  padding: 0.5rem 2.25em;
   display: flex;
   align-items: center; /* Centraliza os itens verticalmente */
   justify-content: flex-end;
@@ -178,8 +178,6 @@ header {
   padding: 1, 25%;
   box-shadow: 0em 0.5em 0.625em rgba(14, 14, 14, 0.014);
   font-family: "Inter", sans-serif;
-  padding-left: 21, 25%;
-  padding-right: 6, 25%;
   position: relative;
   gap: 3, 125%;
   padding-top: 1em;
@@ -247,7 +245,7 @@ main {
   align-items: center;
   text-align: left;
   flex-grow: 1;
-  min-height: calc(100vh - [header height] - [footer height]);
+  min-height: calc(100vh - 5em - 2em);
   align-items: start;
   overflow-y: auto;
   line-height: 1.875em;
@@ -264,7 +262,6 @@ main {
 }
 .align-container {
   display: flex;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   height: auto;
   width: auto;
   justify-content: space-between;
@@ -283,7 +280,7 @@ main {
   object-fit: cover;
   width: fit-content;
   height: fit-content;
-  position: inherit;
+  position: relative;
   border-radius: 50%; /* Faz a imagem ficar circular */
   overflow: hidden; /* Garante que a imagem fique dentro da borda */
   display: inline-block;
@@ -378,34 +375,40 @@ h3 {
 }
 
 /* Container de cards */
-.card-container {
+.portfolio-section {
   display: flex;
-  width: auto;
-  height: auto;
-  justify-content: space-around;
-  grid-template-columns: repeat(auto-fill, minmax(12.5em, 1fr));
-  padding: 1em;
-  align-content: space-around;
-  grid-template-columns: repeat(auto-fill, minmax(21.875em, 1fr));
-  overflow: auto;
-  margin-bottom: 1.25em;
-  padding-left: 21.25em;
-  padding-right: 21.25em;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Permite que os itens ocupem mais de uma linha */
+  justify-content:flex-start; /* Distribui os itens uniformemente */
+  column-gap: 1rem; /* Espaçamento entre os cards */
+  padding: 1rem;
+  padding-left: 160px;
+  padding-right: 160px;
+  }
+
+.portfolio-section h2 {
+  text-align:left;
+    width: 100%; 
+   font-size: 2rem;
+   padding-top: 1.5rem;
+   padding-bottom: 1.5rem;
 }
 
 /* Estilo geral de cada card */
-.card {
-  background-color: #f2f2f2;
+.card-container {
+  background-color: #f5f5f5;
   border-radius: 0.5rem;
   box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
   overflow: auto;
   max-width: 18.75em;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  padding: 20px;
+  padding: 1rem;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column; 
+ 
 }
 
-.card:hover {
+.card-container:hover {
   transform: translateY(-0.3125em);
   box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
 }
@@ -417,22 +420,18 @@ h3 {
   object-fit: cover;
 }
 
-/* Conteúdo do card */
-.card-content {
-  padding: 1rem;
-}
 
-.card-content h3 {
-  margin: 0;
+
+.text-card h3 {
+  margin: 1rem;
   font-size: 1.25em;
   color: #0e1629;
 }
 
-.card-content p {
+.text-card p {
   color: #777;
   font-size: 0.875em;
   margin: 0;
-  position: initial;
 }
 
 /* Botão no card */
@@ -440,18 +439,15 @@ h3 {
   background-color: #4f758c;
   color: rgb(255, 255, 255);
   border: none;
-  padding: 0.625rem 1.25rem;
-  margin: 1rem 0 0 8rem;
+  padding: .5rem;
   cursor: pointer;
   font-size: 0.875rem;
   border-radius: 0.25rem;
-  transition: background-color 0.3s ease;
-  width: auto;
-  height: auto;
-  position: sticky;
-  bottom: 1rem;
-  gap: 10px;
-}
+  transition: background-color 0.3s ease;  
+  margin-top: auto; /* Empurra o botão para o final do card */
+  margin-left: auto; /* Alinha o botão à direita */
+  }
+  
 
 .card-button:hover {
   background-color: #849dac;
@@ -542,13 +538,13 @@ img {
 }
 
 /* Responsividade para celulares */
-@media (max-width: 30em) {
+@media (max-width: 480px) {
   .align-container {
     padding-left: 10vw;
     padding-right: 10vw;
     gap: 1em;
   }
-  .content-padding {
+   .content-padding {
     padding: 0.25em;
   }
   .img-me {
@@ -557,6 +553,7 @@ img {
   }
   .card-container {
     grid-template-columns: 1fr;
+    flex-basis: calc(50% - 1rem);
   }
   .container {
     max-width: 100%;
@@ -593,7 +590,7 @@ img {
   }
 }
 
-@media (max-width: 48em) {
+@media (max-width: 768px) {
   .align-container {
     padding-left: 10vw;
     padding-right: 10vw;
@@ -609,6 +606,7 @@ img {
   }
   .card-container {
     grid-template-columns: 1fr 1fr;
+    flex-basis: 100%;
   }
   .container {
     max-width: 95%;
@@ -681,7 +679,7 @@ img {
     margin: 0;
   }
 }
-@media (max-width: 75em) {
+@media (max-width: 1200px) {
   .align-container {
     padding-left: 10vw;
     padding-right: 10vw;
