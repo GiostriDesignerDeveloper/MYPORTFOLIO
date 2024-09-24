@@ -37,7 +37,7 @@ Aqui vai um resuminho de como as coisas estão organizadas:
 
 Você não precisa de muito para rodar essa belezinha. Só baixar o projeto e abrir o arquivo `index.html` no seu navegador preferido. Aí é só aproveitar a navegação. 🤓
 
-### Passo a Passo:
+### Passo a Passo
 
 1. Clone o repositório (ou baixe o ZIP):
 
@@ -46,7 +46,7 @@ git clone https://github.com/seu-usuario/sua-jornada-ui-ux.git
 ```
 
 2. Abra o arquivo `index.html` em qualquer navegador e voilà! 🥳
-
+3. 
 ## 💻 Funcionalidades
 
 - **Pesquisa**: Sim, temos uma barra de pesquisa fake só para deixar a interface mais bonita. Não faz nada de muito especial ainda. 😅
