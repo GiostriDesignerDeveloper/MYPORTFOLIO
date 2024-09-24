@@ -378,19 +378,19 @@ h3 {
 .portfolio-section {
   display: flex;
   flex-wrap: wrap; /* Permite que os itens ocupem mais de uma linha */
-  justify-content:flex-start; /* Distribui os itens uniformemente */
+  justify-content: flex-start; /* Distribui os itens uniformemente */
   column-gap: 1rem; /* Espaçamento entre os cards */
   padding: 1rem;
   padding-left: 160px;
   padding-right: 160px;
-  }
+}
 
 .portfolio-section h2 {
-  text-align:left;
-    width: 100%; 
-   font-size: 2rem;
-   padding-top: 1.5rem;
-   padding-bottom: 1.5rem;
+  text-align: left;
+  width: 100%;
+  font-size: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 /* Estilo geral de cada card */
@@ -404,8 +404,7 @@ h3 {
   padding: 1rem;
   justify-content: flex-end;
   display: flex;
-  flex-direction: column; 
- 
+  flex-direction: column;
 }
 
 .card-container:hover {
@@ -419,8 +418,6 @@ h3 {
   height: 12.5em;
   object-fit: cover;
 }
-
-
 
 .text-card h3 {
   margin: 1rem;
@@ -439,15 +436,14 @@ h3 {
   background-color: #4f758c;
   color: rgb(255, 255, 255);
   border: none;
-  padding: .5rem;
+  padding: 0.5rem;
   cursor: pointer;
   font-size: 0.875rem;
   border-radius: 0.25rem;
-  transition: background-color 0.3s ease;  
+  transition: background-color 0.3s ease;
   margin-top: auto; /* Empurra o botão para o final do card */
   margin-left: auto; /* Alinha o botão à direita */
-  }
-  
+}
 
 .card-button:hover {
   background-color: #849dac;
@@ -544,7 +540,7 @@ img {
     padding-right: 10vw;
     gap: 1em;
   }
-   .content-padding {
+  .content-padding {
     padding: 0.25em;
   }
   .img-me {
